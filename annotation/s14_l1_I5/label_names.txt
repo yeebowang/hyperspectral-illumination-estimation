@@ -1,0 +1,8 @@
+_background_
+others
+paint_10
+paint_13
+paint_18
+paint_21
+reference_color
+reference_white
