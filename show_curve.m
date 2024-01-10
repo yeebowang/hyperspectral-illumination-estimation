@@ -104,17 +104,16 @@ function plotSpectralCurve(~, ~)
             clf;
             
             hold on;
-            plot(wavelength, squeeze(spectrumSource), 'k--','LineWidth',1.5);
-            
+
+            plot(wavelength, squeeze(normalized_spectrum), 'b-','LineWidth',2);
             hold on;
             plot(wavelength, squeeze(spectrum), 'r:','LineWidth',2);
             hold on;
-            plot(wavelength, squeeze(normalized_spectrum), 'b-','LineWidth',2);
+            plot(wavelength, squeeze(spectrumSource), 'k--','LineWidth',1.5);
     
             xlabel('Wavelength');
             ylabel('Normalized Intensity');
             title('Normalized Spectral Curve');
-            legend({'illumination','measured spectrum', 'corrected spectrum'},'Location','northeast','FontSize',6)
         end
     end
 end
